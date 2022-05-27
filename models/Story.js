@@ -4,11 +4,11 @@ const StorySchema = new mongoose.Schema({
     title: {
         type: String,
         required: true,
-        trim: true
+        trim: true,
     },
     body: {
         type: String,
-        required: true
+        required: true,
     },
     status: {
         type: String,
@@ -17,11 +17,11 @@ const StorySchema = new mongoose.Schema({
     },
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
+        ref: 'User',
     },
     createdAt: {
         type: Date,
-        default: Date.now
+        default: Date.now,
     },
 })
 

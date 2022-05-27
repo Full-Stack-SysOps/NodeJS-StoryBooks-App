@@ -3,15 +3,15 @@ const mongoose = require('mongoose')
 const UserSchema = new mongoose.Schema({
     googleId: {
         type: String,
-        required: true
+        required: true,
     },
     displayName: {
         type: String,
-        required: true
+        required: true,
     },
     firstName: {
         type: String,
-        required: true
+        required: true,
     },
     image: {
         type: String,
@@ -19,8 +19,8 @@ const UserSchema = new mongoose.Schema({
     },
     createdAt: {
         type: Date,
-        default: Date.now
-    }
+        default: Date.now,
+    },
 })
 
 module.exports = mongoose.model('User', UserSchema)
